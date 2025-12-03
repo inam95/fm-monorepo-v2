@@ -48,6 +48,7 @@
 		"vitest": "^3.2.3"
 	},
 	"dependencies": {
+		"@seeds/models": "workspace:*",
 		"cors": "^2.8.5",
 		"express": "^5.1.0",
 		"winston": "^3.17.0",
