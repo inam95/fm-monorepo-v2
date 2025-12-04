@@ -2,11 +2,7 @@
 	"name": "@seeds/ui",
 	"version": "0.0.0",
 	"dependencies": {
-		"@seeds/models": "workspace:*",
-		"cors": "^2.8.5",
-		"express": "^5.1.0",
-		"winston": "^3.17.0",
-		"yaml": "^2.8.0"
+		"@seeds/models": "workspace:*"
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
@@ -14,8 +10,6 @@
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.8",
 		"@tsconfig/svelte": "^5.0.4",
-		"@types/cors": "^2.8.19",
-		"@types/express": "^5.0.3",
 		"@vitest/coverage-v8": "^3.2.3",
 		"@vitest/ui": "^3.2.3",
 		"autoprefixer": "^10.4.21",
