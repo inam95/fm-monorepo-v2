@@ -1,0 +1,9 @@
+{
+  "dependencyTypes": ["prod", "dev", "peer"],
+  "semverGroups": [
+    {
+      "range": "^",
+      "dependencyTypes": ["prod", "dev", "peer"]
+    }
+  ]
+}
