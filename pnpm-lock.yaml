@@ -44,6 +44,9 @@ importers:
 
   packages/models:
     devDependencies:
+      '@microsoft/api-documenter':
+        specifier: ^7.28.1
+        version: 7.28.1(@types/node@24.10.1)
       '@microsoft/api-extractor':
         specifier: ^7.55.1
         version: 7.55.1(@types/node@24.10.1)
@@ -682,6 +685,10 @@ packages:
   '@manypkg/tools@2.1.0':
     resolution: {integrity: sha512-0FOIepYR4ugPYaHwK7hDeHDkfPOBVvayt9QpvRbi2LT/h2b0GaE/gM9Gag7fsnyYyNaTZ2IGyOuVg07IYepvYQ==}
     engines: {node: '>=20.0.0'}
+
+  '@microsoft/api-documenter@7.28.1':
+    resolution: {integrity: sha512-mkAss5DhyKtjQ9n+KURxOjz769WhTE376L9D0e6cX/98GBq1fv4SD6AVIOOFxYIsQv+NivskjUhsa+Geq7T2tQ==}
+    hasBin: true
 
   '@microsoft/api-extractor-model@7.32.1':
     resolution: {integrity: sha512-u4yJytMYiUAnhcNQcZDTh/tVtlrzKlyKrQnLOV+4Qr/5gV+cpufWzCYAB1Q23URFqD6z2RoL2UYncM9xJVGNKA==}
@@ -3727,6 +3734,18 @@ snapshots:
       jju: 1.4.0
       js-yaml: 4.1.1
       tinyglobby: 0.2.15
+
+  '@microsoft/api-documenter@7.28.1(@types/node@24.10.1)':
+    dependencies:
+      '@microsoft/api-extractor-model': 7.32.1(@types/node@24.10.1)
+      '@microsoft/tsdoc': 0.16.0
+      '@rushstack/node-core-library': 5.19.0(@types/node@24.10.1)
+      '@rushstack/terminal': 0.19.4(@types/node@24.10.1)
+      '@rushstack/ts-command-line': 5.1.4(@types/node@24.10.1)
+      js-yaml: 4.1.1
+      resolve: 1.22.11
+    transitivePeerDependencies:
+      - '@types/node'
 
   '@microsoft/api-extractor-model@7.32.1(@types/node@24.10.1)':
     dependencies:
