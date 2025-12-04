@@ -17,6 +17,9 @@ importers:
       '@types/node':
         specifier: ^24.10.1
         version: 24.10.1
+      concurrently:
+        specifier: ^9.2.1
+        version: 9.2.1
       eslint:
         specifier: ^9.28.0
         version: 9.39.1(jiti@2.6.1)
@@ -40,29 +43,7 @@ importers:
         version: 8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
 
   packages/models:
-    dependencies:
-      cors:
-        specifier: ^2.8.5
-        version: 2.8.5
-      express:
-        specifier: ^5.1.0
-        version: 5.2.1
-      winston:
-        specifier: ^3.17.0
-        version: 3.18.3
-      yaml:
-        specifier: ^2.8.0
-        version: 2.8.2
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.28.0
-        version: 9.39.1
-      '@types/cors':
-        specifier: ^2.8.19
-        version: 2.8.19
-      '@types/express':
-        specifier: ^5.0.3
-        version: 5.0.6
       '@types/node':
         specifier: ^24.0.0
         version: 24.10.1
@@ -72,27 +53,12 @@ importers:
       '@vitest/ui':
         specifier: ^3.2.3
         version: 3.2.4(vitest@3.2.4)
-      concurrently:
-        specifier: ^9.1.2
-        version: 9.2.1
-      daisyui:
-        specifier: ^5.0.43
-        version: 5.5.8
       eslint:
         specifier: ^9.28.0
         version: 9.39.1(jiti@2.6.1)
-      prettier:
-        specifier: ^3.5.3
-        version: 3.7.4
-      tsx:
-        specifier: ^4.20.0
-        version: 4.21.0
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
-      typescript-eslint:
-        specifier: ^8.34.0
-        version: 8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       vitest:
         specifier: ^3.2.3
         version: 3.2.4(@types/node@24.10.1)(@vitest/ui@3.2.4)(jiti@2.6.1)(jsdom@26.1.0)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(tsx@4.21.0)(yaml@2.8.2)
@@ -115,9 +81,6 @@ importers:
         specifier: ^2.8.0
         version: 2.8.2
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.28.0
-        version: 9.39.1
       '@types/cors':
         specifier: ^2.8.19
         version: 2.8.19
@@ -133,27 +96,15 @@ importers:
       '@vitest/ui':
         specifier: ^3.2.3
         version: 3.2.4(vitest@3.2.4)
-      concurrently:
-        specifier: ^9.1.2
-        version: 9.2.1
-      daisyui:
-        specifier: ^5.0.43
-        version: 5.5.8
       eslint:
         specifier: ^9.28.0
         version: 9.39.1(jiti@2.6.1)
-      prettier:
-        specifier: ^3.5.3
-        version: 3.7.4
       tsx:
         specifier: ^4.20.0
         version: 4.21.0
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
-      typescript-eslint:
-        specifier: ^8.34.0
-        version: 8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       vitest:
         specifier: ^3.2.3
         version: 3.2.4(@types/node@24.10.1)(@vitest/ui@3.2.4)(jiti@2.6.1)(jsdom@26.1.0)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(tsx@4.21.0)(yaml@2.8.2)
@@ -163,18 +114,6 @@ importers:
       '@seeds/models':
         specifier: workspace:*
         version: link:../models
-      cors:
-        specifier: ^2.8.5
-        version: 2.8.5
-      express:
-        specifier: ^5.1.0
-        version: 5.2.1
-      winston:
-        specifier: ^3.17.0
-        version: 3.18.3
-      yaml:
-        specifier: ^2.8.0
-        version: 2.8.2
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.3
@@ -190,12 +129,6 @@ importers:
         version: 5.2.9(svelte@5.45.5)(vite@6.4.1(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2)(sass-embedded@1.93.3)(sass@1.93.3)(tsx@4.21.0)(yaml@2.8.2))(vitest@3.2.4)
       '@tsconfig/svelte':
         specifier: ^5.0.4
-        version: 5.0.6
-      '@types/cors':
-        specifier: ^2.8.19
-        version: 2.8.19
-      '@types/express':
-        specifier: ^5.0.3
         version: 5.0.6
       '@vitest/coverage-v8':
         specifier: ^3.2.3
