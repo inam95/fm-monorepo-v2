@@ -4,7 +4,6 @@
 		"tailwind.config.js",
 		"postcss.config.cjs",
 		"vite.config.ts",
-		"svelte.config.js",
-		"eslint.config.mts"
+		"svelte.config.js"
 	]
 }

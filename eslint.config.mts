@@ -1,21 +1,22 @@
 // @ts-check
 
 import eslint from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 
-export default tseslint.config(
+export default defineConfig([
 	eslint.configs.recommended,
 	tseslint.configs.strictTypeChecked,
 	{
 		languageOptions: {
 			parserOptions: {
 				projectService: true,
-				tsconfigRootDir: __dirname,
+				tsconfigRootDir: process.cwd(),
 			},
 		},
 	},
 	{
-		files: ['src/**/*.ts', 'tests/**/*.ts'],
+		files: ['packages/**/src/**/*.ts', 'packages/**/tests/**/*.ts'],
 		rules: {
 			'@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
 			'@typescript-eslint/restrict-template-expressions': [
@@ -25,7 +26,7 @@ export default tseslint.config(
 		},
 	},
 	{
-		ignores: ['**/assets/**/*'],
+		ignores: ['**/dist/**', '**/assets/**/*'],
 	},
 	{
 		files: ['**/tailwind.config.js'],
@@ -43,4 +44,4 @@ export default tseslint.config(
 			},
 		},
 	},
-)
+])
